@@ -3,7 +3,7 @@
 
 **Features:**
 
-_Moving Players around proxy servers with a command_
+_Moving Players around proxy servers using a commandblock_
 
 > /proxycommand server:
 >
