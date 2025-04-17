@@ -1,0 +1,5 @@
+# List of all Velocity servers
+servers:
+  - lobby
+  - survival
+  - creative
