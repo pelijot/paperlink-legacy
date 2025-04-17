@@ -1,7 +1,8 @@
-# paperlink legacy
+9# paperlink legacy
 ## The Initial Version of the paper and velocity plugin
 
-**Features**
+**Features:**
+
 _Moving Players around proxy servers with a command_
 
 > /proxycommand server
