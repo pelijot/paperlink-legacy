@@ -1,0 +1,37 @@
+name: Build Velocity Plugin
+
+on:
+  push:
+    paths:
+      - 'paperlink-proxy/**'
+      - '.github/workflows/build-velocity.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: paperlink-proxy
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Grant execute permission to gradlew
+      run: chmod +x ./gradlew
+
+    - name: Build Jar
+      run: ./gradlew build
+
+    - name: Upload Velocity Plugin
+      uses: actions/upload-artifact@v4
+      with:
+        name: paperlink-proxy
+        path: paperlink-proxy/build/libs/*.jar

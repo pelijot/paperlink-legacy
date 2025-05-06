@@ -1,0 +1,7 @@
+name: paperlink
+version: L1.0
+main: network.tecnocraft.paperlink.server.PaperLinkServerPlugin
+description: "Sends proxy commands from Paper server to Velocity proxy"
+commands:
+  proxycommand:
+    description: "Sends proxy command. Usage: /proxycommand server <servername> [playername]"

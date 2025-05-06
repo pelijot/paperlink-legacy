@@ -1,0 +1,4 @@
+# Update Interval
+update-interval-minutes: 100
+retry-no-player-minutes: 30
+# To deactivate the update interval, set it to -1

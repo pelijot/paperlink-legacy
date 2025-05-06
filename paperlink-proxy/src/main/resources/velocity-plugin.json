@@ -1,0 +1,9 @@
+{
+  "id": "paperlink-proxy",
+  "name": "Paperlink - Proxy",
+  "version": "L1.0",
+  "description": "Moves players between servers based on plugin messages.",
+  "authors": ["Pelijot"],
+  "main": "network.tecnocraft.paperlink.proxy.PaperLinkProxyPlugin",
+  "dependencies": []
+}
